@@ -1,20 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HaBITat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <section class="section">
-        <div class="container">
-          <h1 class="title">
-            Hello World
-          </h1>
-          <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
-          </p>
+    <section class="header-section">
+        <div class="container is-large">
+            <h1 class="title is-centered">
+                Ha<span id="title-section">BIT</span>at
+            </h1>
+            <p class="subtitle">
+                <strong>Bitcoin</strong> Currency Converter
+            </p>
         </div>
-      </section>
+    </section>
+
+    <section class="display-bitcoin-section">
+        <div class="container is-large">
+            <h1 class="Bitcoin-price">
+                Current Bitcoin Price in
+            </h1>
+            <br>
+            <br>
+        </div>
+    </section>
+
+
+    <section class="conversion-section">
+        <div class="container">
+
+            <div class="field is-dark">
+                <div class="control has-icons-left is-dark">
+                    <div class="select is-dark">
+                        <select>
+                            <option selected>Country</option>
+                            <option>AUD</option>
+                            <option>BGN</option>
+                            <option>BRL</option>
+                            <option>CAD</option>
+                            <option>CHF</option>
+                            <option>CNY</option>
+                            <option>CZK</option>
+                            <option>DKK</option>
+                            <option>GBP</option>
+                            <option>HKD</option>
+                            <option>HRK</option>
+                            <option>HUF</option>
+                            <option>IDR</option>
+                            <option>ILS</option>
+                            <option>INR</option>
+                            <option>ISK</option>
+                            <option>JPY</option>
+                            <option>KRW</option>
+                            <option>MXN</option>
+                            <option>MYR</option>
+                            <option>NOK</option>
+                            <option>NZD</option>
+                            <option>PHP</option>
+                            <option>PLN</option>
+                            <option>RON</option>
+                            <option>RUB</option>
+                            <option>SEK</option>
+                            <option>SGD</option>
+                            <option>THB</option>
+                            <option>TRY</option>
+                            <option>USD</option>
+                            <option>ZAR</option>
+                        </select>
+                    </div>
+                    <div class="icon is-small is-left is-dark">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+            </div>
+            <button class="button is-dark is-large convert-currency"><span id="title-section">Convert</span></button>
+        </div>
+
+    </section>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
 </body>
+
 </html>

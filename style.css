@@ -1,0 +1,21 @@
+html {
+    background-image: url(./dark-bitcoin-scaled.jpg);
+    background-size: cover;
+}
+
+.title {
+    color: #50443d;
+}
+
+#title-section {
+    color: #c98d3e;
+}
+
+section {
+    margin: 20px;
+    padding: 30px;
+}
+
+body {
+    margin-right: 20px;
+}
