@@ -13,7 +13,7 @@ $("button").click(function() {
   + "?access_key=" + liveAPIkey;
   var rateQueryURL = "https://api.exchangeratesapi.io/latest??symbols=USD," + selection;
 
-$.ajax({
+  $.ajax({
     url: liveQueryURL,
     method: "GET"
   }).then(function(response) {
