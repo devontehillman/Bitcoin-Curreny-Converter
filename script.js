@@ -4,6 +4,8 @@ var queryURL = "http://api.coinlayer.com/live"
 
 
 
+
+
 $.ajax({
     url: queryURL,
     method: "GET"
@@ -13,8 +15,10 @@ $.ajax({
  
  
   $.ajax({
-    url: "https://api.exchangeratesapi.io/latest??symbols=USD,EUR",
+    url: "https://api.exchangeratesapi.io/latest?symbols=USD,EUR",
     method: "GET"
   }).then(function(response) {
     console.log(response.rates.USD);
   });
+
+  
