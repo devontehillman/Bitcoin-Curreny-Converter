@@ -8,7 +8,16 @@ $("button").click(function() {
   var liveQueryURL = "http://api.coinlayer.com/live"
   + "?access_key=" + liveAPIkey;
   var rateQueryURL = "https://api.exchangeratesapi.io/latest?base=USD&symbols=USD," + selection;
+  var kanyeAPI = "https://api.kanye.rest";
 
+  $.ajax({
+    url: kanyeAPI,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $(".Kanye").text("Kanye inspirational quote:").append("<br>").append("<h1>" + "'" + response.quote + "'");
+
+  });
 
   $.ajax({
       url: rateQueryURL,
