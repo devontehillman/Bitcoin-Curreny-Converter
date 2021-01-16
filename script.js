@@ -19,13 +19,10 @@ $("button").click(function() {
     }).then(function(response) {
       var selectionRates = response.rates[selection];
       var USDRates = response.rates.USD;
-      function convert() {
-        var anything = selectionRates/USDRates;
-        return anything;
-      };
-      console.log(convert());
+      var anything = selectionRates/USDRates;
+      console.log(anything);
       $(".selectedCurrency").text(selection);
-  
+      return anything;
     });
     };
 
@@ -36,9 +33,9 @@ $("button").click(function() {
   }).then(function(response) {
     var BTCRate = response.rates.BTC;
     console.log(BTCRate);
-    exchangeRate();
-    var final = anything * BTCRate;
-    console.log(final);
+    var hello = exchangeRate();
+    // var final = anything * BTCRate;
+    console.log(hello);
 
   });
 
