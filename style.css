@@ -23,3 +23,13 @@ body {
 #convertBtn {
     color: #c98d3e;
 }
+
+.container {
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.kanyeSays {
+    color: #50443d;
+}
