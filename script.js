@@ -1,7 +1,6 @@
 
 
 $("button").click(function() {
-  // var ratesArray = [""];
   var selection = $("select").val();
   console.log(selection);
 
@@ -11,9 +10,7 @@ $("button").click(function() {
   var rateQueryURL = "https://api.exchangeratesapi.io/latest?base=USD&symbols=USD," + selection;
 
 
-  function exchangeRate() {
-
-    $.ajax({
+  $.ajax({
       url: rateQueryURL,
       method: "GET"
     }).then(function(response) {
@@ -22,40 +19,23 @@ $("button").click(function() {
       var anything = selectionRates/USDRates;
       console.log(anything);
       $(".selectedCurrency").text(selection);
-      return anything;
+      localStorage.setItem("exchangeRate", anything);
     });
-    };
 
 
   $.ajax({
-    url: liveQueryURL,
-    method: "GET"
-  }).then(function(response) {
-    var BTCRate = response.rates.BTC;
-    console.log(BTCRate);
-    var hello = exchangeRate();
-    // var final = anything * BTCRate;
-    console.log(hello);
+      url: liveQueryURL,
+      method: "GET"
+    }).then(function(response) {
+      var BTCRate = response.rates.BTC;
+      console.log(BTCRate);
+      var something = localStorage.getItem("exchangeRate");
+      var final = something * BTCRate;
+      var rounded = Math.round(final * 100)/100;
+      Number.parseFloat(rounded).toFixed(2);
+      $(".BTC-Conversion").text("$" + rounded);
 
-  });
-
-
-  // function exchangeRate() {
-
-  // $.ajax({
-  //   url: rateQueryURL,
-  //   method: "GET"
-  // }).then(function(response) {
-  //   var selectionRates = response.rates[selection];
-  //   var USDRates = response.rates.USD;
-  //   function convert() {
-  //     (selectionRates/USDRates) * BTCRate
-  //   };
-  //   console.log(convert());
-  //   $(".selectedCurrency").text(selection);
-
-  // });
-  // };
+    });
 
 
 });
