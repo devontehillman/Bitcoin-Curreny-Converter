@@ -4,7 +4,11 @@ html {
 }
 
 .title {
-    color: #50443d;
+    color: white;
+}
+
+.subtitle {
+    color: white;
 }
 
 #title-section {
@@ -14,6 +18,7 @@ html {
 section {
     margin: 20px;
     padding: 30px;
+    color: white;
 }
 
 body {
