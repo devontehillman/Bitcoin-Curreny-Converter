@@ -1,8 +1,9 @@
 $("button").click(function() {
   var selection = $("select").val();
   var currencySymbol = $('#country').find(":selected").data('currency')
-  console.log(currencySymbol);
-  console.log(selection);
+  var locale = $('#country').find(":selected").data('locales')
+  // console.log(currencySymbol);
+  // console.log(selection);
 
   var liveAPIkey = "0f0c1950be32c8fb3bf766b86a8c9b34";
   var liveQueryURL = "http://api.coinlayer.com/live"
@@ -42,7 +43,9 @@ $("button").click(function() {
       var final = something * BTCRate;
       var rounded = Math.round(final * 100)/100;
       Number.parseFloat(rounded).toFixed(2);
-      $(".BTC-Conversion").text(currencySymbol + rounded);
+      $(".BTC-Conversion").text(currencySymbol +" "+ rounded);
+      $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded)); 
+  
 
     });
 

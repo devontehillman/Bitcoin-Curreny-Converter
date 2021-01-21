@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-=======
 
 <head>
     <meta charset="UTF-8">
@@ -8,94 +7,100 @@
     <title>BIT Rate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Quicksand:wght@500&display=swap">
 </head>
 
 <body>
-    <section class="header-section">
-        <div class="container is-large">
-            <h1 class="title is-centered">
-                <span id="title-section">BIT</span>rate
-            </h1>
-            <p class="subtitle">
-                <strong>Bitcoin</strong> Currency Converter
-            </p>
-        </div>
-    </section>
+    <div class="container">
+        <div class="column is-12">
+            <section class="header-section">
+                <div class="container is-large">
+                    <h1 class="title is-centered">
+                        <span id="title-section">BIT</span>rate
+                    </h1>
+                    <p class="subtitle">
+                        Bitcoin Currency Converter
+                    </p>
+                </div>
+            </section>
 
-    <section class="display-bitcoin-section">
-        <div class="container is-large">
-            <h1 class="Bitcoin-price">
-                Current Bitcoin Price in <span class="selectedCurrency">USD</span>
-            </h1>
-            <br>
-            <h1>
-                <span class="BTC-Conversion"></span>
-            </h1>
-            <br>
-            <h1>
-                <span class="Kanye"></span>
-            </h1>
-        </div>
-    </section>
+            <section class="display-bitcoin-section">
+                <div class="container is-large">
+                    <h1 class="Bitcoin-price">
+                        Current Bitcoin Price in <span class="selectedCurrency">USD</span>
+                    </h1>
+                    <br>
+                    <h1>
+                        <span class="BTC-Conversion"></span>
+                    </h1>
+                    <br>
+                    <h1>
+                        <span class="Kanye"></span>
+                    </h1>
+                </div>
+            </section>
 
 
-    <section class="conversion-section">
-        <div class="container">
+            <section class="conversion-section">
+                <div class="container">
 
-            <div class="field">
-                <div class="control has-icons-left">
-                    <div class="select">
-                        <select id="country">
-                            <option selected>Country</option>
-                            <option data-currency="$" id="AUD">AUD</option>
-                            <option data-currency="лв" id="BGN">BGN</option>
-                            <option data-currency="R$" id="BRL">BRL</option>
-                            <option data-currency="$" id="CAD">CAD</option>
-                            <option data-currency="CHf" id="CHF">CHF</option>
-                            <option data-currency="¥" id="CNY">CNY</option>
-                            <option data-currency="Kč" id="CZK">CZK</option>
-                            <option data-currency="Kr." id="DKK">DKK</option>
-                            <option data-currency="£" id="GBP">GBP</option>
-                            <option data-currency="$" id="HKD">HKD</option>
-                            <option data-currency="kn" id="HRK">HRK</option>
-                            <option data-currency="Ft" id="HUF">HUF</option>
-                            <option data-currency="Rp" id="IDR">IDR</option>
-                            <option data-currency="₪" id="ILS">ILS</option>
-                            <option data-currency="₹" id="INR">INR</option>
-                            <option data-currency="kr" id="ISK">ISK</option>
-                            <option data-currency="¥" id="JPY">JPY</option>
-                            <option data-currency="₩" id="KRW">KRW</option>
-                            <option data-currency="$" id="MXN">MXN</option>
-                            <option data-currency="RM" id="MYR">MYR</option>
-                            <option data-currency="kr" id="NOK">NOK</option>
-                            <option data-currency="$" id="NZD">NZD</option>
-                            <option data-currency="₱" id="PHP">PHP</option>
-                            <option data-currency="zł" id="PLN">PLN</option>
-                            <option data-currency="lei" id="RON">RON</option>
-                            <option data-currency="₽" id="RUB">RUB</option>
-                            <option data-currency="kr" id="SEK">SEK</option>
-                            <option data-currency="$" id="SGD">SGD</option>
-                            <option data-currency="฿" id="THB">THB</option>
-                            <option data-currency="₺" id="TRY">TRY</option>
-                            <option data-currency="$" id="USD">USD</option>
-                            <option data-currency="R" id="ZAR">ZAR</option>
-                        </select>
-                    </div>
-                    <div class="icon is-small is-left is-dark">
-                        <i class="fas fa-globe"></i>
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <div class="select">
+                                <select id ="country">
+                                    <option selected>Country</option>
+                                    <option  data-currency="$" id="AUD">AUD</option>
+                                    <option data-locales = "bg-BG" data-currency="лв" id="BGN">BGN</option>
+                                    <option data-locales = "pt-BR" data-currency="R$" id="BRL">BRL</option>
+                                    <option data-locales = "en-CA" data-currency="$" id="CAD">CAD</option>
+                                    <option data-locales = "sv-CH" data-currency="CHf" id="CHF">CHF</option>
+                                    <option data-locales = "zh-CN" data-currency="¥" id="CNY">CNY</option>
+                                    <option data-locales = "cs-CZ" data-currency="Kč" id="CZK">CZK</option>
+                                    <option data-locales = "da-DK" data-currency="Kr." id="DKK">DKK</option>
+                                    <option data-locales = "en-GB" data-currency="£" id="GBP">GBP</option>
+                                    <option data-locales = "zh-HK" data-currency="$" id="HKD">HKD</option>
+                                    <option data-locales = "hr-HR" data-currency="kn" id="HRK">HRK</option>
+                                    <option data-locales = "hu-HU" data-currency="Ft" id="HUF">HUF</option>
+                                    <option data-locales = "in-ID" data-currency="Rp" id="IDR">IDR</option>
+                                    <option data-locales = "he-IL" data-currency="₪" id="ILS">ILS</option>
+                                    <option data-locales = "dz-IN" data-currency="₹" id="INR">INR</option>
+                                    <option data-locales = "is-IS" data-currency="kr" id="ISK">ISK</option>
+                                    <option data-locales = "ja-JP" data-currency="¥" id="JPY">JPY</option>
+                                    <option data-locales = "ko-KR" data-currency="₩" id="KRW">KRW</option>
+                                    <option data-locales = "es-MXN" data-currency="$" id="MXN">MXN</option>
+                                    <option data-locales = "ms-MY" data-currency="RM" id="MYR">MYR</option>
+                                    <option data-locales = "no-NO" data-currency="kr" id="NOK">NOK</option>
+                                    <option data-locales = "en-NZ" data-currency="$" id="NZD">NZD</option>
+                                    <option data-locales = "en-PH" data-currency="₱" id="PHP">PHP</option>
+                                    <option data-locales = "pl-PL" data-currency="zł" id="PLN">PLN</option>
+                                    <option data-locales = "ro-RO" data-currency="lei" id="RON">RON</option>
+                                    <option data-locales = "ru-RU" data-currency="₽" id="RUB">RUB</option>
+                                    <option data-locales = "sv-SE" data-currency="kr" id="SEK">SEK</option>
+                                    <option data-locales = "en-SG" data-currency="$" id="SGD">SGD</option>
+                                    <option data-locales = "th-TH" data-currency="฿" id="THB">THB</option>
+                                    <option data-locales = "tr-TR" data-currency="₺" id="TRY">TRY</option>
+                                    <option data-locales = "en-US" data-currency="$" id="USD">USD</option>
+                                    <option data-locales = "en-ZA" data-currency="R" id="ZAR">ZAR</option>
+                                </select>
+                            </div>
+                            <div class="icon is-small is-left is-dark">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <button class="button is-dark is-large convert-currency"><span
+                                id="convertBtn">Convert</span></button>
                     </div>
                 </div>
-            </div>
-            <button class="button is-dark is-large convert-currency"><span id="convertBtn">Convert</span></button>
-        </div>
-
-    </section>
+        </section>
+    </div>
 
 
-    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="script.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
