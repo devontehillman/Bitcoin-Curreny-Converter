@@ -3,8 +3,17 @@ html {
     background-size: cover;
 }
 
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .title {
-    color: #50443d;
+    color: white;
+}
+
+.subtitle {
+    color: white;
 }
 
 #title-section {
@@ -14,6 +23,7 @@ html {
 section {
     margin: 20px;
     padding: 30px;
+    color: white;
 }
 
 body {
@@ -22,4 +32,15 @@ body {
 
 #convertBtn {
     color: #c98d3e;
+}
+
+.container {
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.Kanye {
+    color: white;
+    grid-template-columns: 450px;
 }
