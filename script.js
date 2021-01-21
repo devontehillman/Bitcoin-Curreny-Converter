@@ -1,8 +1,10 @@
 
 // This is the click function that kicks off all of the functionality and updates
 $("button").click(function () {
-  // The selection variable holds the user's currency selection so we can call on it later
+  // These variables holdd the user's currency selection so we can call on it later and the symbol of the selected currency
   var selection = $("select").val();
+  var currencySymbol = $('#country').find(":selected").data('currency')
+  console.log(currencySymbol);
   console.log(selection);
 
   // These variables house our URLS and API Keys for our AJAX queries
@@ -51,8 +53,8 @@ $("button").click(function () {
     var rounded = Math.round(final * 100) / 100;
     // This is to format the rate to #,###.##
     Number.parseFloat(rounded).toFixed(2);
-    // This is to add the text to the HTML to show the final converted price of the selected currency in Bitcoin
-    $(".BTC-Conversion").text("$" + rounded);
+    // This is to add the text to the HTML to show the final converted price and symbol of the selected currency in Bitcoin
+    $(".BTC-Conversion").text(currencySymbol + rounded);
 
   });
 
