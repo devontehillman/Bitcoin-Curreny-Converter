@@ -50,11 +50,18 @@ $("button").click(function () {
     var something = localStorage.getItem("exchangeRate");
     var final = something * BTCRate;
     var rounded = Math.round(final * 100) / 100;
+    var input = parseInt(inputfield);
     // This is to format the rate to #,###.##
     Number.parseFloat(rounded).toFixed(2);
     // This is to add the text to the HTML to show the final converted price and symbol of the selected currency in Bitcoin
     $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded)); 
 
+
+    if (0 < input < 1000000) {
+      $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
+    } else {
+      $(".BTC-Conversion").text("Error: Please enter a valid number");
+    };
   });
 
 
