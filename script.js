@@ -4,6 +4,7 @@ $("button").click(function () {
   // These variables holdd the user's currency selection so we can call on it later and the symbol of the selected currency
   var selection = $("select").val();
   var currencySymbol = $('#country').find(":selected").data('currency')
+  var locale = $('#country').find(":selected").data('locales')
   console.log(currencySymbol);
   console.log(selection);
 
@@ -55,6 +56,7 @@ $("button").click(function () {
     Number.parseFloat(rounded).toFixed(2);
     // This is to add the text to the HTML to show the final converted price and symbol of the selected currency in Bitcoin
     $(".BTC-Conversion").text(currencySymbol + rounded);
+    $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded)); 
 
   });
 
