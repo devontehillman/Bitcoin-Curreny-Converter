@@ -8,7 +8,7 @@ $("button").click(function () {
 
   // These variables house our URLS and API Keys for our AJAX queries
   var liveAPIkey = "4a8e4865703019c1bf2a1adb05d5b6eb";
-  var liveQueryURL = "https://api.coinlayer.com/live"
+  var liveQueryURL = "https://cors-anywhere.herokuapp.com/http://api.coinlayer.com/live"
     + "?access_key=" + liveAPIkey;
   var rateQueryURL = "https://api.exchangeratesapi.io/latest?base=USD&symbols=USD," + selection;
   var kanyeAPI = "https://api.kanye.rest";
