@@ -5,7 +5,7 @@ $("button").click(function() {
   // console.log(currencySymbol);
   // console.log(selection);
 
-  var liveAPIkey = "0f0c1950be32c8fb3bf766b86a8c9b34";
+  var liveAPIkey = "4a8e4865703019c1bf2a1adb05d5b6eb";
   var liveQueryURL = "http://api.coinlayer.com/live"
   + "?access_key=" + liveAPIkey;
   var rateQueryURL = "https://api.exchangeratesapi.io/latest?base=USD&symbols=USD," + selection;
