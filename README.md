@@ -6,7 +6,7 @@ Here our team has created a bitcoin currency converter which takes the current b
 * Inspirational Kanye qoute. 
 
 ## Finished-Page
-![Refactored Webpage](image of finished webpage)
+![Refactored Webpage](Assets/BITrateImage.png)
 
 ## What did we learn?
 In this project we learned:
