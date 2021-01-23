@@ -49,3 +49,8 @@ body {
 .textarea {
     height: 20px;
 }
+
+#donateBtn {
+    size: 25%;
+    color: #c98d3e;
+}
