@@ -59,6 +59,9 @@ $("button").click(function () {
 
     if (0 < input && input < 1000000) {
       $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
+      } else if (input >= 1000000) {
+      $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
+      $(".BTC-Conversion").append("<br>").append("<button class='button is-dark is-large'>Donate your riches!</button>");
       } else {
       $(".BTC-Conversion").text("Error: Please enter a valid number");
     };

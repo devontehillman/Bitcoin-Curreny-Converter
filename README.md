@@ -22,3 +22,4 @@ In this project we learned:
 * Trending price fluctuations
 * Add other crypto currency conversions
 * Add a search history
+* Add funtcionality to allow donation button to collect donations
