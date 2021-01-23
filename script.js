@@ -56,6 +56,19 @@ $("button").click(function () {
     // This is to add the text to the HTML to show the final converted price and symbol of the selected currency in Bitcoin
     // $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded)); 
     console.log(input);
+<<<<<<< HEAD
+=======
+
+    if (0 < input && input < 1000000) {
+      $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
+      } else if (input >= 1000000) {
+      $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
+      $(".BTC-Conversion").append("<br>").append("<button class='button is-dark is-large'>Donate your riches!</button>");
+      } else {
+      $(".BTC-Conversion").text("Error: Please enter a valid number");
+    };
+  });
+>>>>>>> 6a0160383597b97087f81d4d7b4b903f7a79cf57
 
     if (0 < input && input < 1000000) {
       $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));

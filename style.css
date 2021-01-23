@@ -1,5 +1,5 @@
 html {
-    background-image: url(./dark-bitcoin-scaled.jpg);
+    background-image: url(./Assets/dark-bitcoin-scaled.jpg);
     background-size: cover;
 }
 
@@ -44,4 +44,13 @@ body {
 .Kanye {
     color: white;
     grid-template-columns: 450px;
+}
+
+.textarea {
+    height: 20px;
+}
+
+.donatebutton {
+    size: 50%;
+    color: #C98D3E;
 }
