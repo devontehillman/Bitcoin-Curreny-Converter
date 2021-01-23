@@ -45,3 +45,7 @@ body {
     color: white;
     grid-template-columns: 450px;
 }
+
+.textarea {
+    height: 20px;
+}
