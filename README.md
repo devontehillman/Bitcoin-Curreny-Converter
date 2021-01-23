@@ -1,7 +1,7 @@
 # Bitcoin-Curreny-Converter
 
 ## Description
-Here our team has created a bitcoin currency converter which takes the current bitcoin in usd and converts it to bitcoin in the user's selcted currency([Visit the website here.](finshed webpage url)). Our websites features include:
+Here our team has created a bitcoin currency converter which takes the current bitcoin in usd and converts it to bitcoin in the user's selcted currency([Visit the website here.](https://devontehillman.github.io/Bitcoin-Curreny-Converter/)). Our websites features include:
 * Current bitcoin conversion to selected currency.   
 * Inspirational Kanye qoute. 
 * See how much your Bitcoin collection is worth in chosen currency
