@@ -1,0 +1,56 @@
+html {
+    background-image: url(./Assets/dark-bitcoin-scaled.jpg);
+    background-size: cover;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: white;
+}
+
+#title-section {
+    color: #c98d3e;
+}
+
+section {
+    margin: 20px;
+    padding: 30px;
+    color: white;
+}
+
+body {
+    margin-right: 20px;
+}
+
+#convertBtn {
+    color: #c98d3e;
+}
+
+.container {
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.Kanye {
+    color: white;
+    grid-template-columns: 450px;
+}
+
+.textarea {
+    height: 20px;
+}
+
+.donatebutton {
+    size: 50%;
+    color: #C98D3E;
+}
