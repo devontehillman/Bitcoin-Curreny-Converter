@@ -53,15 +53,16 @@ $("button").click(function () {
     var input = parseInt($("textarea").val());
     // This is to format the rate to #,###.##
     Number.parseFloat(rounded).toFixed(2);
-    // This is to add the text to the HTML to show the final converted price and symbol of the selected currency in Bitcoin
-    // $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded)); 
     console.log(input);
 
+    // This if function formats the number with the correct currency format based on user selection when they input a number between 1 and 1000000. If the number is over 1000000, we ask if they would kindly donate.
     if (0 < input && input < 1000000) {
       $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
       } else if (input >= 1000000) {
       $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded * input));
       $(".BTC-Conversion").append("<br>").append("<button class='button is-dark is-large'>Donate your riches!</button>");
+      } else if (isNaN(input)) {
+        $(".BTC-Conversion").text(new Intl.NumberFormat(locale, {style: 'currency',currency: selection}).format(rounded));
       } else {
       $(".BTC-Conversion").text("Error: Please enter a valid number");
     };
