@@ -4,9 +4,10 @@
 Here our team has created a bitcoin currency converter which takes the current bitcoin in usd and converts it to bitcoin in the user's selcted currency([Visit the website here.](finshed webpage url)). Our websites features include:
 * Current bitcoin conversion to selected currency.   
 * Inspirational Kanye qoute. 
+* See how much your Bitcoin collection is worth in chosen currency
 
 ## Finished-Page
-![Refactored Webpage](image of finished webpage)
+![Refactored Webpage](Assets/BITrateImage.png)
 
 ## What did we learn?
 In this project we learned:
@@ -18,4 +19,7 @@ In this project we learned:
 
 
 ## Future Improvments
-*
+* Trending price fluctuations
+* Add other crypto currency conversions
+* Add a search history
+* Add funtcionality to allow donation button to collect donations

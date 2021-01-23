@@ -1,5 +1,5 @@
 html {
-    background-image: url(./dark-bitcoin-scaled.jpg);
+    background-image: url(./Assets/dark-bitcoin-scaled.jpg);
     background-size: cover;
 }
 
@@ -46,11 +46,11 @@ body {
     grid-template-columns: 450px;
 }
 
-.contol {
-    width: 450px;
+.textarea {
+    height: 20px;
 }
 
-donatebutton {
-    size: 25%;
-    color: #c98d3e;
+.donatebutton {
+    size: 50%;
+    color: #C98D3E;
 }
