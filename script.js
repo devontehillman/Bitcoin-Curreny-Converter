@@ -70,4 +70,5 @@ $("button").click(function () {
 
 
 });
+// Notes for class
 
